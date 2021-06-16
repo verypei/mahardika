@@ -73,6 +73,21 @@ let arr = [
     },
 ];
 function scoring(grade){
-
+    let result = []
+    grade = result
+    for (let i = 0; i < arr.length; i++) {
+        let averageScore = 0
+        for (let j = 0; j < arr[i].nilai.length; j++) {
+            averageScore += (arr[i].nilai[j] / arr[i].nilai.length)
+        }
+        arr[i] = averageScore
+        if (result.length === 0) {
+            result = [arr[i]]
+        }
+        else if (averageScore > result[0]) {
+            result = [arr[i]]
+        }
+    }
+    return result
 }
 console.log(scoring(arr));
