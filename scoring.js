@@ -73,6 +73,23 @@ let arr = [
     },
 ];
 function scoring(grade){
+    let score = 0;
+    for (let i = 0; i < grade.length; i++) {
+        score += grade[i].nilai
+    }
+    
+    let average = score / grade.length;
+    console.log(score)
+    console.log(average) 
 
+    let graduated = []
+
+    for (let i = 0; i < grade.length; i++) {
+        if ( grade[i].nilai > average ) {
+            graduated.push(grade[i])
+        }
+    }    
+    return graduated;
 }
-console.log(scoring(arr));
+
+console.log(scoring(arr))
