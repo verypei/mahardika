@@ -25,7 +25,7 @@ function calculate(num1, num2, operator) {
     return operator
 }
 
-console.log(calculate(1, 2, '+')) // 3
+console.log(calculate(1, 2, '+')) // 
 console.log(calculate(1, 2, '-')) // -1
 console.log(calculate(1, 2, '*')) // 2
 console.log(calculate(1, 2, '/')) // 0.5
