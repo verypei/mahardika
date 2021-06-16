@@ -72,7 +72,30 @@ let arr = [
         nilai : 67
     },
 ];
-function scoring(grade){
 
+
+// console.log(arr);
+
+function scoring(grade){
+    let result = [arr[0]]
+    let nilailulus = 67;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if(nilailulus >= arr[i].nilai){
+                result = [arr[i]]
+            }
+            else {
+                result = "tidak lulus"
+            }
+        }
+    }
+    return result;
 }
 console.log(scoring(arr));
+
+// hasilnya : 
+//     [
+//         { nama: 'very', nilai: 90 },
+//         { nama: 'tono', nilai: 72 },
+//         { nama: 'vera', nilai: 67 }
+//     ]
