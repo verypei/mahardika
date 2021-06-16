@@ -15,7 +15,14 @@
  */
 
 function calculate(num1, num2, operator) {
-    
+    tambah1 = num1 + num2
+    tambah2 = num1 - num2
+    tambah3 = num1 * num2
+    tambah4 = num1 / num2
+    tambah5 = num1 % num2
+
+    operator = `${tambah1} ${tambah2} ${tambah3} ${tambah4} ${tambah5}`
+    return operator
 }
 
 console.log(calculate(1, 2, '+')) // 3
