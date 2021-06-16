@@ -8,9 +8,9 @@ let string = '';
 for (let i = 0; i < col; i++) {
     string = ''
     for (let j = 0; j < row; j++) { 
-      if (i === back - back%2) {
+      if (i === Math.floor(back - back/2)) {
         string += word[j]
-      } else if (j === back - back%2 ) {
+      } else if (j === Math.floor(back - back/2) ) {
         string += word[i]
       } else {
         string += " ";
