@@ -15,7 +15,8 @@
  */
 
 function calculate(num1, num2, operator) {
-    
+    let result = num1 + operator + num2
+    console.log(result);
 }
 
 console.log(calculate(1, 2, '+')) // 3
