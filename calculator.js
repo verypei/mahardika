@@ -14,19 +14,8 @@
  * % -> moduls angka tersebut
  */
 
-function calculate(num1, num2, operator) {
-    if (operator === '+') {
-        return num1 + num2;
-    } else if (operator === '-') {
-        return num1 - num2;
-    } else if (operator === '*') {
-        return num1 * num2;
-    } else if (operator === '/') {
-        return num1 / num2;
-    } else {
-        return num1 / num2;
-    }
-    
+const calculate = (num1, num2, operator) => {      
+    return operator === '+' ? num1 + num2 : operator === '-' ? num1 - num2 : operator === '*' ? num1 * num2 : operator === '/' ? num1 / num2 : num1 % num2
 }
 
 console.log(calculate(1, 2, '+')) // 3
