@@ -73,6 +73,18 @@ let arr = [
     },
 ];
 function scoring(grade){
+    grade = 65;
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].nilai >= grade) {
+            //muncul object didalam aray
+            result += arr[i]
 
+            // muncul nama dan nilai tetapi bukan object didalam aray
+            // result += arr[i].nama
+            // result += arr[i].nilai
+        }
+    }
+    return result
 }
 console.log(scoring(arr));
